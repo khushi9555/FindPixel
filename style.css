@@ -1,0 +1,128 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+ body{
+    width: 100%;
+    height: 100%;
+    line-height: 1.6;
+    background-color: #e4aeae;
+}
+
+.search_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+h1{
+    font-size: 50px;
+    font-weight:900;
+    text-align: center;
+    margin: 30px 0 60px 0;
+    color: #a94343;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#search-input{
+    width: 80%;
+    max-width: 500px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color:#ae5b5b;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+     border-radius: 5px;
+     margin-left: 10px;
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+     flex-wrap: wrap;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffcdcd;
+}
+
+.search-result img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img{
+    opacity: 0.8;
+}
+
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width : 900px){
+    .search-result {
+        width: 42%;
+    }
+    .search-result img{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width : 600px){
+    .search-result {
+        width: 80%;
+    }
+    .search-result img{
+        height: 250px;
+    }
+}
